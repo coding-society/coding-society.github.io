@@ -21,14 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d13acd94-9bad-471d-a56f-6e6b2b4ce327" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c++.html" beforeDir="false" afterPath="$PROJECT_DIR$/c++.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses.html" beforeDir="false" afterPath="$PROJECT_DIR$/courses.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interest.html" beforeDir="false" afterPath="$PROJECT_DIR$/interest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java.html" beforeDir="false" afterPath="$PROJECT_DIR$/java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python.html" beforeDir="false" afterPath="$PROJECT_DIR$/python.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +62,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1597204792384</updated>
-      <workItem from="1597204793925" duration="4863000" />
+      <workItem from="1597204793925" duration="5086000" />
     </task>
     <servers />
   </component>
