@@ -1,13 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <script data-dapp-detection="">
+        (function() {
+            let alreadyInsertedMetaTag = false
+
+            function __insertDappDetected() {
+                if (!alreadyInsertedMetaTag) {
+                    const meta = document.createElement('meta')
+                    meta.name = 'dapp-detected'
+                    document.head.appendChild(meta)
+                    alreadyInsertedMetaTag = true
+                }
+            }
+
+            if (window.hasOwnProperty('web3')) {
+                // Note a closure can't be used for this var because some sites like
+                // www.wnyc.org do a second script execution via eval for some reason.
+                window.__disableDappDetectionInsertion = true
+                // Likely oldWeb3 is undefined and it has a property only because
+                // we defined it. Some sites like wnyc.org are evaling all scripts
+                // that exist again, so this is protection against multiple calls.
+                if (window.web3 === undefined) {
+                    return
+                }
+                __insertDappDetected()
+            } else {
+                var oldWeb3 = window.web3
+                Object.defineProperty(window, 'web3', {
+                    configurable: true,
+                    set: function (val) {
+                        if (!window.__disableDappDetectionInsertion)
+                            __insertDappDetected()
+                        oldWeb3 = val
+                    },
+                    get: function () {
+                        if (!window.__disableDappDetectionInsertion)
+                            __insertDappDetected()
+                        return oldWeb3
+                    }
+                })
+            }
+        })()</script></head>
+<body class="vsc-initialized">
 <div class="navbar navbar-expand-md navbar-light">
     <div class="navbar-brand">
         <a class="logo" href="https://www.theodinproject.com/home">
-            <img class="logo__img" src="/assets/odin-logo-2d729f16279e9fc3b58ce847eacf07f883bdfc95eb23bb5064ed59d36ef551d6.svg">
+            <img class="logo__img" src="https://github.com/coding-society/coding-society.github.io/blob/master/logo.png?raw=true">
             <div class="logo__text"> Code Society </div>
         </a>
     </div>
@@ -23,7 +61,10 @@
                 <a class="nav-link" href="/tracks">Curriculum</a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="/about?ref=homenav">About</a>
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="about.html">About</a>
             </li>
         </ul>
     </nav>
@@ -45,7 +86,7 @@
                     <a class="course-card-header__link" href="/courses/web-development-101">
                         <div class="course-card-header__image">
                             <div class="course-badge">
-                                <img alt="Web Development 101 badge" class="course-badge__image" src="https://download.logo.wine/logo/Java_(programming_language)/Java_(programming_language)-Logo.wine.png">
+                                <img alt="Web Development 101 badge" class="course-badge__image" src="https://cdn.freebiesupply.com/logos/thumbs/2x/java-4-logo.png">
                             </div>
 
                         </div>
@@ -90,7 +131,7 @@
                 </div>
 
                 <div class="course-card__description">
-                    <p>Time to dive deep into Ruby, the language 'designed for programmer happiness.' You'll cover object-oriented design, testing, and data structures – essential knowledge for learning other programming languages, too!</p>
+                    <p>Time to dive deep into Ruby, the language 'designed for programmer happiness.' You'll cover object-oriented design, testing, and data structures Ã¢â‚¬â€œ essential knowledge for learning other programming languages, too!</p>
                 </div>
             </div> <!-- /.course-card -->
         </div> <!-- /.col -->
@@ -125,13 +166,14 @@
             </div> <!-- /.course-card -->
         </div> <!-- /.col -->
     </div> <!-- /.row -->
-    
+
 
     <p class="text-center track-description">
-    </p><div class="bottom-cta">
-</div>
+    </p>
 
     <p></p>
 </div>
-</body>
-</html>
+
+
+
+</body></html>
