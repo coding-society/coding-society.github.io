@@ -28,7 +28,47 @@
 
 
 
-    <script src="https://js-agent.newrelic.com/nr-1173.min.js"></script><script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script src="https://js-agent.newrelic.com/nr-1173.min.js"></script><script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script src="https://js-agent.newrelic.com/nr-1173.min.js"></script><script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script src="https://js-agent.newrelic.com/nr-1173.min.js"></script><script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script src="https://js-agent.newrelic.com/nr-1173.min.js"></script><script data-dapp-detection="">
+    <script src="https://js-agent.newrelic.com/nr-1173.min.js"></script><script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script src="https://js-agent.newrelic.com/nr-1173.min.js"></script><script data-dapp-detection="">
+    (function() {
+        let alreadyInsertedMetaTag = false
+
+        function __insertDappDetected() {
+            if (!alreadyInsertedMetaTag) {
+                const meta = document.createElement('meta')
+                meta.name = 'dapp-detected'
+                document.head.appendChild(meta)
+                alreadyInsertedMetaTag = true
+            }
+        }
+
+        if (window.hasOwnProperty('web3')) {
+            // Note a closure can't be used for this var because some sites like
+            // www.wnyc.org do a second script execution via eval for some reason.
+            window.__disableDappDetectionInsertion = true
+            // Likely oldWeb3 is undefined and it has a property only because
+            // we defined it. Some sites like wnyc.org are evaling all scripts
+            // that exist again, so this is protection against multiple calls.
+            if (window.web3 === undefined) {
+                return
+            }
+            __insertDappDetected()
+        } else {
+            var oldWeb3 = window.web3
+            Object.defineProperty(window, 'web3', {
+                configurable: true,
+                set: function (val) {
+                    if (!window.__disableDappDetectionInsertion)
+                        __insertDappDetected()
+                    oldWeb3 = val
+                },
+                get: function () {
+                    if (!window.__disableDappDetectionInsertion)
+                        __insertDappDetected()
+                    return oldWeb3
+                }
+            })
+        }
+    })()</script><script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script src="https://js-agent.newrelic.com/nr-1173.min.js"></script><script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script src="https://js-agent.newrelic.com/nr-1173.min.js"></script><script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script src="https://js-agent.newrelic.com/nr-1173.min.js"></script><script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script src="https://js-agent.newrelic.com/nr-1173.min.js"></script><script data-dapp-detection="">
     (function() {
         let alreadyInsertedMetaTag = false
 
@@ -243,14 +283,14 @@
                             <div class="section-lessons__item">
 
                                 <a class="section-lessons__item__link" href="/coding-society.github.io/java/lesson1.html">
-                                    1. Java Lesson 1
+                                    1. Overview of Computer Programing
                                 </a>
 
                             </div>
                             <div class="section-lessons__item">
 
-                                <a class="section-lessons__item__link" href="/courses/web-development-101/lessons/introduction-to-web-development">
-                                    2. Introduction to Web Development
+                                <a class="section-lessons__item__link" href="/coding-society.github.io/java/lesson2.html">
+                                    2. Installation of Java
                                 </a>
 
                             </div>
@@ -296,19 +336,7 @@
 
 
 
-<div class="floating-dropdown">
-    <div class="floating-dropdown__item floating-dropdown--hidden-item text-center" data-toggle="tooltip" data-placement="left" title="Chat">
-        <a target="_blank" rel="noreferrer" class="chat-floating-btn" href="https://discord.gg/V75WSQG">
-            <i class="fas fa-comment"></i>
-        </a>  </div>
-    <div class="floating-dropdown__item floating-dropdown--hidden-item text-center" data-toggle="tooltip" data-placement="left" title="Forum">
-        <a target="_blank" rel="noreferrer" href="https://forum.theodinproject.com">
-            <i class="fas fa-users" aria-hidden="true"></i>
-        </a>  </div>
-    <div class="floating-dropdown__item main-floating-btn">
-        <i class="fas fa-comments" aria-hidden="true"></i>
-    </div>
-</div>
+
 
 <!-- Google Analytics Tracking Snippet -->
 <!-- Only load it if we're in a production environment! -->
@@ -326,6 +354,7 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
 </script>
+
 
 
 
