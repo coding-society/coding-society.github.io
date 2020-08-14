@@ -13961,37 +13961,37 @@ input:checked+.toggle-switch__slider:before {
 
 
 body {
-  color: rgb(209, 205, 199);
-  background-color: rgb(24, 26, 27);
+  color: #ffffff;
+  background-color: #000000;
 }
 
 html, body, input, textarea, select, button {
     border-color: #736b5e;
-    color: #e8e6e3;
+    color: #ffffff;
 }
 
 html, body, input, textarea, select, button {
-    background-color: #181a1b;
+    background-color: #000000;
 }
 
 :root {
-    --darkreader-neutral-background: #181a1b;
-    --darkreader-neutral-text: #e8e6e3;
+    --darkreader-neutral-background: #000000;
+    --darkreader-neutral-text: #ffffff;
     --darkreader-selection-background: #004daa;
-    --darkreader-selection-text: #e8e6e3;
+    --darkreader-selection-text: #ffffff;
 }
 
 html {
-    -webkit-tap-highlight-color: rgba(232, 230, 227, 0);
+    -webkit-tap-highlight-color: #000000;
 }
 
 ::selection {
     background-color: #004daa !important;
-    color: #e8e6e3 !important;
+    color: #ffffff !important;
 }
 
 .internal-link {
-    color: rgb(185, 179, 170);
+    color: #ffffff;
 }
 
 a {
@@ -14005,52 +14005,52 @@ a {
 }
 
 .lesson-content h3 {
-    color: rgb(185, 179, 170);
+    color: #ffffff;
 }
 
 h1, h2, h3, h4, p {
-    color: rgb(185, 179, 170);
+    color: #ffffff;
 }
 
 body {
-    color: rgb(209, 205, 199);
-    background-color: rgb(24, 26, 27);
+    color: #ffffff;
+    background-color: #000000;
 }
 
 html, body, input, textarea, select, button {
     border-color: #736b5e;
-    color: #e8e6e3;
+    color: #ffffff;
 }
 
 html, body, input, textarea, select, button {
     border-color: #736b5e;
-    color: #e8e6e3;
+    color: #ffffff;
 }
 
 .navbar {
     background-image: initial;
-    background-color: rgb(24, 26, 27);
+    background-color: #000000;
 }
 
 .navbar .navbar-nav .nav-item .nav-link {
-    color: rgba(185, 179, 170, 0.7);
+    color: #ffffff;
     text-decoration-color: initial;
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: rgba(232, 230, 227, 0.5);
+    color: #ffffff;
 }
 
 .lesson-content p {
-    color: rgb(185, 179, 170);
+    color: #ffffff;
 }
 
 h1, h2, h3, h4, p {
-    color: rgb(185, 179, 170);
+    color:#ffffff;
 }
 
 p {
-    color: rgba(185, 179, 170, 0.7);
+    color: #ffffff;
 }
 
 .lesson-content ul li {
@@ -14061,7 +14061,7 @@ p {
 }
 
 .lesson-content li {
-  color: rgba(185, 179, 170, 0.7);
+  color: #ffffff;
 }
 
 
