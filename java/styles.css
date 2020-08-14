@@ -12538,7 +12538,7 @@ footer .footer-links .footer-link:hover {
 }
 
 .navbar .navbar-nav .nav-item .nav-link:hover {
-  color: #000
+  color: gray;
 }
 
 .navbar .navbar-nav .nav-item.active .nav-link {
@@ -13960,13 +13960,14 @@ input:checked+.toggle-switch__slider:before {
 
 
 
+
 body {
   color: #ffffff;
   background-color: #000000;
 }
 
 html, body, input, textarea, select, button {
-    border-color: #736b5e;
+    border-color: #ffffff;
     color: #ffffff;
 }
 
@@ -14018,12 +14019,12 @@ body {
 }
 
 html, body, input, textarea, select, button {
-    border-color: #736b5e;
+    border-color: #ffffff;
     color: #ffffff;
 }
 
 html, body, input, textarea, select, button {
-    border-color: #736b5e;
+    border-color: #ffffff;
     color: #ffffff;
 }
 
@@ -14063,6 +14064,7 @@ p {
 .lesson-content li {
   color: #ffffff;
 }
+
 
 
 
