@@ -2,6 +2,7 @@
     <link rel="stylesheet" href="styles.css">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <script type="text/javascript" src="http://livejs.com/live.js"></script>
     <script src="https://js-agent.newrelic.com/nr-1173.min.js"></script><script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script src="https://js-agent.newrelic.com/nr-1173.min.js"></script><script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script src="https://js-agent.newrelic.com/nr-1173.min.js"></script><script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script src="https://js-agent.newrelic.com/nr-1173.min.js"></script><script data-dapp-detection="">
     (function() {
         let alreadyInsertedMetaTag = false
@@ -231,50 +232,147 @@
 
 
 
-                    <div id="introduction" class=""><h3>What is Computer Programming?</a></h3><p>If you are completely new to computer programming, there is no better starting point than right here.
-                        You might have already scrolled ahead to see what quick lines of code you can pick up, but in this lesson,
-                        we would rather like to direct your attention to what computer programming really is.</p><p>Computer programming is a process, starting from the design of a solution to a particular task to its
-                        eventual build, which when done right, will result in success. Another way to put it is that computer
-                        programming is a way of problem solving. You will often be tasked with something that the computer
-                        must do, and it's your job to figure out how to communicate with the computer on how to accomplish
-                        that task as efficiently as possible.</p>
+                    <div id="introduction" class="">
 
-                        <img src="https://github.com/coding-society/coding-society.github.io/blob/master/img1.png?raw=true" alt="face" style=";width:100%;height:500px;">
+                        <h3>Step 1: Open the terminal</a></h3>
 
-                        <p>Communicate? Yes, that's right. While you might not be literally talking to a screen (although nothing
-                            wrong with that), coding is essentially a written form of communicating with your computer. Imagine
-                            writing a recipe guide for a friend which provides all the instructions needed to create a certain dish.
-                            Programming has the same underlying idea: you give the computer “instructions” (lines of code) in order
-                            to create a certain dish (usually a computer program to accomplish a certain task).</p></div>
+                        <p>To check this, we need to use the terminal program (terminal on Mac devices, command prompt
+                            on Window devices). We will usually refer to it as the terminal throughout the course, but just
+                            know that the command prompt is the exact same thing as well. If you don’t know where to find
+                            it, you can simply search for it using your computer’s search bar. You can also find the terminal
+                            in the applications folder on your computer. The terminal will be further discussed in Lesson 4.</p>
+
+                        <img src="https://github.com/coding-society/coding-society.github.io/blob/master/images/Page-1-Image-2.png?raw=true" alt="face" style=";width:100%;height:500px;">
+
+                        <h3>Step 2: Type in “java” (without the quotes)</a></h3>
+
+                        <p>If you get a whole bunch of lines that look like this:</p>
+
+                        <img src="https://github.com/coding-society/coding-society.github.io/blob/master/images/Page-10-Image-25.png?raw=true" alt="face" style=";width:100%;height:800px;">
+
+                        <p> <b>That means Java is already installed in your computer. </b>But if you get a message that looks
+                            like this:
+                        </p>
+
+                        <img src="https://github.com/coding-society/coding-society.github.io/blob/master/images/Page-2-Image-6.png?raw=true" alt="face" style=";width:100%;height:100px;">
+
+                        <p> <b>That means Java is not installed on your computer. </b>You will need to continue through this
+                            lesson to successfully download Java on your computer.
+                        </p>
+
+                    </div>
 
 
-                    <img src="https://github.com/coding-society/coding-society.github.io/blob/master/img2.png?raw=true" alt="Smiley face" style=";width:100%;height:400px;">
+                    <div id="how-it-works">
+                        <h3>Step 3: Finding bit-operating (Skip for OSX) </a></h3>
 
-                    <div id="how-it-works"><h3>Why Learn Java?</a></h3><p>Just like how English is one of many languages in the world, Java is one of many coding languages out
-                        there. You might be wondering why Java in particular is worth the space in your brain. Well, here are a
-                        few reasons why:
-                    </p>
-                        <ul>
-                            <li>It’s a very common language used in the programming world and knowing how to code in Java is a
-                                useful skill to be able to whip out</li>
-                            <li>It gives its developers access to a vast API (this will be discussed later in the course)</li>
-                            <li>It is a language centered around Object Orientated Programming (no need to know what this
-                                means now, this will also be elaborated on later) which brings very powerful uses to programs</li>
-                            <li>
-                                It runs faster than many other languages such as Python
-                            </li>
-                            <li>
-                                It’s a good language to know in order to learn more complex languages needed for app
-                                development
-                            </li>
-                            <li>
-                                It’s free! Free is always nice
-                            </li>
-                        </ul>
+                        <p>One way you can find this information is by typing “bit” into the
+                            computer’s search bar, and one of the suggested results will be “See if
+                            you have a 32-bit or 64-bit version of Windows.” Click on it, and you
+                            should be able to see which one it is.
+                         </p>
 
-                        <p>Now that you hopefully know what and why you might be here to learn how to code in Java, the next step
-                            is to download all the necessary components to get you set up for coding your first Java program!</p></div>
+                        <img src="https://github.com/coding-society/coding-society.github.io/blob/master/images/Page-2-Image-4.png?raw=true" alt="face" style=";width:100%;height:900px;">
 
+
+
+
+                        <p>Another way is to open File Explorer and then click on “This PC” in the left hand side of the
+                            window. Once you are there, right click on any empty area and click on “Properties” from the
+                            menu that pops up near your mouse. Look for “System type” under the “System” section, and
+                            you should be able to see which bit system it is.
+                            You will need to know this later, but don’t worry if you forget, you can always look it up again if
+                            you forget.</p>
+                    </div>
+
+                    <div id="download JDK">
+                        <h3>Step 4: Download Java JDK</a></h3>
+
+                        <p>Java is owned by Oracle, so we must go to their website where we can download the latest
+                            version of java for free. It should look something like this:
+                        </p>
+
+                        <img src="https://github.com/coding-society/coding-society.github.io/blob/master/images/Page-3-Image-7.png?raw=true" alt="face" style=";width:100%;height:400px;">
+
+                        <p> If your computer runs on a 32-bit operating system, you will need to create an Oracle
+                            account. The newer versions of Java only support 64-bit operating systems, but no need to worry
+                            because Oracle archives older versions of Java for public use, but you will need to make an
+                            account to download it.
+                            Step 6: Click on “JDK Download” under Java SE 14. If you have a computer that runs on a
+                            32-bit operating system (Windows), you will need to scroll down to “Java SE 8u241” and
+                            download that JDK instead.
+                        </p>
+
+                        <p>  Click on “JDK Download” under Java SE 14. If you have a computer that runs on a
+                            32-bit operating system (Windows), you will need to scroll down to “Java SE 8u241” and
+                            download that JDK instead.
+                        </p>
+
+                        <img src="https://github.com/coding-society/coding-society.github.io/blob/master/images/Page-4-Image-8.png?raw=true" alt="face" style=";width:100%;height:400px;">
+
+
+                        <p>If you have a Mac, click on the link for macOS Installer. If you have a computer that runs with
+                            Windows (64-bit), click on the link for Windows x64 Installer.</p>
+
+                        <img src="https://github.com/coding-society/coding-society.github.io/blob/master/images/Page-4-Image-9.png?raw=true" alt="face" style=";width:100%;height:400px;">
+
+                        <p>If your Windows computer runs on a 32-bit operating system, you will need to click on the
+                            download link for Windows x86..</p>
+
+                        <img src="https://github.com/coding-society/coding-society.github.io/blob/master/images/Page-4-Image-10.png?raw=true" alt="face" style=";width:100%;height:75px;">
+
+                        <p>You will be prompted with a message such as this:</p>
+
+                        <img src="https://github.com/coding-society/coding-society.github.io/blob/master/images/Page-5-Image-11.png?raw=true" alt="face" style=";width:100%;height:300px;">
+
+
+                    </div>
+                    <div id="install JDK">
+                        <h3>Step 5: Open the downloaded file</a></h3>
+
+                        <p> After you click on the downloaded file, you should encounter a screen that looks something like
+                            this:
+                        </p>
+
+
+                        <img src="https://github.com/coding-society/coding-society.github.io/blob/master/images/Page-5-Image-13.png?raw=true" alt="face" style=";width:49%;height:400px;">
+                        <img src="https://github.com/coding-society/coding-society.github.io/blob/master/images/Page-5-Image-13.png?raw=true" alt="face" style=";width:49%;height:400px;">
+
+                        <p> If your computer runs on a 32-bit operating system, you will need to create an Oracle
+                            account. The newer versions of Java only support 64-bit operating systems, but no need to worry
+                            because Oracle archives older versions of Java for public use, but you will need to make an
+                            account to download it.
+                            Step 6: Click on “JDK Download” under Java SE 14. If you have a computer that runs on a
+                            32-bit operating system (Windows), you will need to scroll down to “Java SE 8u241” and
+                            download that JDK instead.
+                        </p>
+
+                        <p>  Click on “JDK Download” under Java SE 14. If you have a computer that runs on a
+                            32-bit operating system (Windows), you will need to scroll down to “Java SE 8u241” and
+                            download that JDK instead.
+                        </p>
+
+                        <img src="https://github.com/coding-society/coding-society.github.io/blob/master/images/Page-4-Image-8.png?raw=true" alt="face" style=";width:100%;height:400px;">
+
+
+                        <p>If you have a Mac, click on the link for macOS Installer. If you have a computer that runs with
+                            Windows (64-bit), click on the link for Windows x64 Installer.</p>
+
+                        <img src="https://github.com/coding-society/coding-society.github.io/blob/master/images/Page-4-Image-9.png?raw=true" alt="face" style=";width:100%;height:500px;">
+
+                        <p>If your Windows computer runs on a 32-bit operating system, you will need to click on the
+                            download link for Windows x86..</p>
+
+                        <img src="https://github.com/coding-society/coding-society.github.io/blob/master/images/Page-4-Image-10.png?raw=true" alt="face" style=";width:100%;height:75px;">
+
+                        <p>You will be prompted with a message such as this:</p>
+
+                        <img src="https://github.com/coding-society/coding-society.github.io/blob/master/images/Page-5-Image-11.png?raw=true" alt="face" style=";width:100%;height:300px;">
+
+                        <p> If you are one of those types of people, go ahead and read the License Agreement. Check the
+                            box off and click on the green download button. Don’t worry, you won’t get a virus, hopefully 😄.</p>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -295,7 +393,7 @@
 
 <script type="text/javascript">
     var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-41005438-1']);
+    _gaq.push(['_setAccount', 'UA-175474766-2']);
     _gaq.push(['_trackPageview']);
 
     (function() {
@@ -304,14 +402,6 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
 </script>
-
-
-
-
-
-
-
-
 
 
 </body></html>

@@ -10205,11 +10205,6 @@ a.text-dark:focus {
   }
 }
 
-@font-face {
-  font-family: "Norse";
-  src: url(/assets/Norse-Bold-f675f9aaa02f9af3892214b1a63cb038a18d870d484a9eab34fba266583a26cf.otf)
-}
-
 html {
   height: 100%;
   font-size: 100%;
